@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>The Bin's Gaming and Computer</title>
+  <meta name="description" content="The Bin's Gaming and Computer — gaming, computer, Windows & Office keys giá tốt.">
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <style>
+    :root{
+      --blue:#087ff5; --blue2:#00b7ff; --navy:#06111f; --panel:#0b1c31;
+      --text:#eef7ff; --muted:#9eb4c9; --line:rgba(77,171,255,.22);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+      background:radial-gradient(circle at 20% 0%,#0d3560 0,#06111f 36%,#030912 100%);
+      color:var(--text); overflow-x:hidden}
+    a{color:inherit;text-decoration:none}
+    .glow{position:fixed;width:420px;height:420px;border-radius:50%;
+      background:rgba(0,183,255,.10);filter:blur(70px);pointer-events:none}
+    .g1{top:-160px;left:-140px}.g2{right:-180px;top:40%}
+    header{position:sticky;top:0;z-index:10;background:rgba(3,9,18,.78);
+      backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+    nav{max-width:1180px;margin:auto;padding:16px 22px;display:flex;align-items:center;justify-content:space-between}
+    .brand{font-weight:900;letter-spacing:-.03em}.brand span{color:var(--blue2)}
+    nav .links{display:flex;gap:22px;color:var(--muted);font-size:14px}
+    nav .links a:hover{color:white}
+    .wrap{max-width:1180px;margin:auto;padding:0 22px}
+    .hero{min-height:78vh;display:grid;grid-template-columns:1.25fr .75fr;align-items:center;gap:50px}
+    .eyebrow{display:inline-flex;gap:8px;align-items:center;padding:8px 12px;border:1px solid var(--line);
+      background:rgba(8,127,245,.09);border-radius:999px;color:#bfe8ff;font-size:13px}
+    h1{font-size:clamp(46px,7vw,88px);line-height:.95;margin:22px 0 18px;letter-spacing:-.055em}
+    h1 em{font-style:normal;color:var(--blue2)}
+    .hero p{max-width:650px;color:var(--muted);font-size:18px;line-height:1.65}
+    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .btn{padding:13px 18px;border-radius:12px;border:1px solid var(--line);font-weight:800}
+    .primary{background:linear-gradient(135deg,var(--blue),var(--blue2));color:#00101d;border:0}
+    .card{background:linear-gradient(180deg,rgba(15,39,67,.88),rgba(7,19,33,.88));
+      border:1px solid var(--line);border-radius:24px;padding:26px;box-shadow:0 20px 80px rgba(0,0,0,.25)}
+    .logoMark{width:150px;height:150px;border-radius:32px;margin:auto;display:grid;place-items:center;
+      background:linear-gradient(145deg,var(--blue),var(--blue2));color:#00101d;font-size:54px;font-weight:1000;
+      box-shadow:0 0 70px rgba(0,183,255,.25)}
+    section{padding:86px 0}.sectionHead{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:28px}
+    h2{font-size:38px;margin:0;letter-spacing:-.04em}.sectionHead p{color:var(--muted);max-width:560px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .video{min-height:190px;display:flex;flex-direction:column;justify-content:space-between}
+    .thumb{aspect-ratio:16/9;border-radius:16px;display:grid;place-items:center;
+      background:linear-gradient(135deg,#07345f,#087ff5 55%,#00b7ff);font-size:34px;font-weight:1000}
+    .video h3{font-size:18px;margin:14px 0 8px}.video p{color:var(--muted);font-size:14px;margin:0 0 16px}
+    .watch{display:inline-flex;color:#bfe8ff;font-weight:800}
+    .priceGrid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .price h3{margin:0 0 8px}.price .tag{color:#67d8ff;font-weight:900;font-size:28px}
+    .price ul{color:var(--muted);line-height:1.9;padding-left:20px}
+    .contact{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .contactBox{display:flex;justify-content:space-between;align-items:center;gap:20px}
+    .country{font-size:13px;color:#67d8ff;font-weight:900;text-transform:uppercase;letter-spacing:.12em}
+    .phone{font-size:25px;font-weight:900;margin-top:5px}
+    footer{padding:35px 0 55px;color:var(--muted);border-top:1px solid var(--line);font-size:14px}
+    .note{font-size:12px;color:#7690a7;margin-top:18px}
+    @media(max-width:800px){
+      .hero,.priceGrid,.contact{grid-template-columns:1fr}
+      .grid{grid-template-columns:1fr}
+      nav .links{display:none}
+      section{padding:65px 0}
+    }
+  </style>
+</head>
+<body>
+  <div class="glow g1"></div><div class="glow g2"></div>
+  <header><nav>
+    <a class="brand" href="#top">THE BIN'S <span>GAMING & COMPUTER</span></a>
+    <div class="links">
+      <a href="#videos">YouTube</a><a href="#keys">Windows & Office</a><a href="#contact">Liên hệ</a>
+    </div>
+  </nav></header>
+
+  <main id="top">
+    <div class="wrap">
+      <section class="hero">
+        <div class="heroText">
+          <div class="eyebrow">● GAMING • COMPUTER • SOFTWARE</div>
+          <h1>The Bin's<br><em>Gaming & Computer</em></h1>
+          <p>Không gian dành cho game thủ và người yêu công nghệ — video YouTube, chia sẻ máy tính và hỗ trợ mua key Windows & Office giá tốt.</p>
+          <div class="cta">
+            <a class="btn primary" href="#videos">Xem video YouTube</a>
+            <a class="btn" href="#contact">Liên hệ mua key</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="logoMark"><img src="image.png" alt="Image" height="150px" width="150px"></div>
+          <h3 style="text-align:center;font-size:25px;margin:22px 0 8px">The Bin's Gaming and Computer</h3>
+          <p style="text-align:center;color:var(--muted);line-height:1.6">Gaming • PC • Windows • Office</p>
+        </div>
+      </section>
+
+      <section id="videos">
+        <div class="sectionHead">
+          <div><h2>Video YouTube</h2><p>Các video của kênh The Bin's Gaming and Computer. Thay các ô bên dưới bằng link video cụ thể của bạn khi triển khai.</p></div>
+        </div>
+        <div class="grid">
+          <article class="card video">
+            <div><div class="thumb"><img src="https://i.ytimg.com/vi/i91HxfOoYjk/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCRLk7iTCmfxLj5VIUzCLRv7iwvTw
+                " alt="Image" height="175.86px" width="312.66px"></div><h3>Video mới nhất</h3><p>Gaming / PC / công nghệ</p></div>
+            <a class="watch" target="_blank" href="https://www.youtube.com/results?search_query=The+Bin%27s+Gaming+and+Computer">Mở YouTube →</a>
+          </article>
+          <article class="card video">
+            <div><div class="thumb"><img src="https://i.ytimg.com/vi/sXVrOM0xSlA/hq720.jpg?sqp=-oaymwFBCNAFEJQDSFryq4qpAzMIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB8AEB-AH-CYAC0AWKAgwIABABGBMgcig1MA8=&rs=AOn4CLBWsSd-hUARHtLMO9F-mZXu8alogQ
+                " alt="Image" height="175.88px" width="312.67px"></div><h3>Gaming & Tips</h3><p>Gameplay, hướng dẫn và thủ thuật</p></div>
+            <a class="watch" target="_blank" href="https://www.youtube.com/results?search_query=The+Bin%27s+Gaming+and+Computer+gaming">Xem trên YouTube →</a>
+          </article>
+          <article class="card video">
+            <div><div class="thumb"><img src="https://i.ytimg.com/vi/SH0R1AbsuWY/hq720.jpg?sqp=-oaymwFBCNAFEJQDSFryq4qpAzMIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB8AEB-AH-CYAC0AWKAgwIABABGGUgZShlMA8=&rs=AOn4CLBKyDnqfCOOs9PbFkWXaCTdaD8yG
+                " alt="Image" height="175.86px" width="312.66px"></div><h3>Computer & Windows</h3><p>PC, Windows, Office và công nghệ</p></div>
+            <a class="watch" target="_blank" href="https://www.youtube.com/results?search_query=The+Bin%27s+Gaming+and+Computer+Windows+Office">Xem trên YouTube →</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="keys">
+        <div class="sectionHead">
+          <div><h2>Windows & Office Keys</h2><p>Mua key phần mềm giá tốt, hỗ trợ tư vấn và kích hoạt theo nhu cầu.</p></div>
+        </div>
+        <div class="priceGrid">
+          <div class="card price"><h3>Windows</h3><div class="tag">750.000đ</div><ul><li>Windows 10 / 11</li><li>Tư vấn phiên bản phù hợp</li><li>Hỗ trợ kích hoạt</li></ul></div>
+          <div class="card price"><h3>Microsoft Office</h3><div class="tag">400.000đ</div><ul><li>Office cho cá nhân / gia đình</li><li>Tư vấn phiên bản</li><li>Hỗ trợ cài đặt & kích hoạt</li></ul></div>
+        </div>
+        <p class="note">Lưu ý: chỉ sử dụng key/phần mềm từ nguồn hợp pháp và đúng điều khoản cấp phép.</p>
+      </section>
+
+      <section id="contact">
+        <div class="sectionHead">
+          <div><h2>Liên hệ mua key</h2><p>Liên hệ ngay để mua key Windows và Office bản quyền giá rẻ.</p></div>
+        </div>
+        <div class="contact">
+          <div class="card contactBox">
+            <div><div class="country">Việt Nam</div><div class="phone">+84 83 700 8213</div></div>
+            <a class="btn primary" href="tel:+84">Gọi ngay</a>
+          </div>
+          <div class="card contactBox">
+            <div><div class="country">Australia</div><div class="phone">+61 (454) 909-840</div></div>
+            <a class="btn primary" href="tel:+61">Call now</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer><div class="wrap">© 2026 The Bin's Gaming and Computer • Gaming • Computer • Windows • Office</div></footer>
+
+  <script>
+    const tl = gsap.timeline({defaults:{ease:"power3.out"}});
+    tl.from(".heroText > *",{y:35,opacity:0,duration:.65,stagger:.08})
+      .from(".hero .card",{y:35,opacity:0,scale:.96,duration:.7},"-=.45")
+      .from("section",{y:25,opacity:0,duration:.5,stagger:.12},"+=.1");
+  </script>
+</body>
+</html>
